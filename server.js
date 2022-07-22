@@ -1,3 +1,5 @@
+//This file creates a server without using Express, with just pure Nodejs code.
+
 
 //REQUIRES
 //https is to be able to make the server.
@@ -5,6 +7,10 @@ const http = require('http');
 
 //fs is to access filesystem.
 const fs = require('fs');
+
+
+//lodash
+const _ = require('lodash');
 
 const server = http.createServer((req,res)=>{
         //To get request information (The one browser sends) use the req. object. To send a response use the res. object.
