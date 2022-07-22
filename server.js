@@ -9,8 +9,6 @@ const http = require('http');
 const fs = require('fs');
 
 
-//lodash
-const _ = require('lodash');
 
 const server = http.createServer((req,res)=>{
         //To get request information (The one browser sends) use the req. object. To send a response use the res. object.
