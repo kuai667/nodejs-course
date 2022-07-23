@@ -1,7 +1,19 @@
 const express = require('express');
 
+
+
 //Creating an instance of an express app.
 const app = express();
+
+
+
+//Register a view engine - Must be after express instance!
+app.set('view engine','ejs')
+
+
+//By default, it uses the /views folder for views. If I want to set another folder for them, then I'd use:
+// app.set('views','folderName')
+
 
 //Listen for requests
 app.listen(3000);
