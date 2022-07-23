@@ -35,5 +35,5 @@ app.get('/about', (req,res)=>{
 //If none of the above matches the url, then it'll use this function:
 
 app.use((req,res)=>{
-    res.status(404).sendFile('./views/404.html',{ root: __dirname})
+    res.status(404).render('404');
 })
